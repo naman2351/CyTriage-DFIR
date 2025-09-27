@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CyTriage - Digital Forensics & Incident Response Tool
 
-## Getting Started
+CyTriage is an open-source DFIR (Digital Forensics & Incident Response) tool designed for rapid memory analysis and IOC (Indicators of Compromise) detection.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📂 **Evidence Import** - Accept forensic images (RAW, memory dumps)
+- 🧠 **Automated Memory Analysis** - Volatility3 integration for memory forensics
+- ⚠️ **IOC Detection** - Hash-based IOC scanning and threat intelligence
+- 🤖 **AI-powered Anomaly Detection** - Risk scoring with suggested actions
+- 📊 **Real-time Visualization** - Interactive analysis results and reports
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Analysis**: Python, Volatility3, custom IOC scanners
+- **Visualization**: Recharts, PDF reporting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Quick Start
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18+
+- Python 3.8+
+- Volatility3
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/cy-triage.git
+   cd cy-triage
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Usage
+
+    Upload a memory dump through the web interface
+
+    Automatic analysis begins immediately
+
+    View results including:
+
+        Process analysis with suspicious activity detection
+
+        IOC matches and hash information
+
+        Risk score assessment
+
+        Detailed process information
